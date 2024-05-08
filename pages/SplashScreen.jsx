@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { View, Text, StyleSheet } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 const SplashScreen = ({ route, navigation }) => {
-  // Ensure route.params is defined before accessing userType
+
   const userType = route.params?.userType;
 
   useEffect(() => {
