@@ -27,7 +27,7 @@ const SplashScreen = ({ route, navigation }) => {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Splash Screen</Text>
-      {/* Render splash UI components */}
+      
     </View>
   );
 };
