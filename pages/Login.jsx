@@ -18,7 +18,7 @@ const LoginScreen = ({ navigation }) => {
 
   const handleLogin = async () => {
     try {
-      // Validate phone number and password
+     
       if (!validatePhoneNumber(phoneNumber)) {
         Alert.alert("Error", "Please enter a valid phone number.");
         return;
@@ -31,7 +31,7 @@ const LoginScreen = ({ navigation }) => {
         return;
       }
 
-      // Replace with your actual API endpoint
+    
       const apiUrl =
         "https://sapi.cicil.biz.id:8443/kancil/user/auth/apis/v2/user/login";
 
@@ -63,7 +63,7 @@ const LoginScreen = ({ navigation }) => {
   };
 
   const validatePhoneNumber = (phoneNumber) => {
-    // Regular expression to validate phone number (only digits, length between 8 and 14)
+  
     const regex = /^[0-9]{8,14}$/;
     return regex.test(phoneNumber);
   };
